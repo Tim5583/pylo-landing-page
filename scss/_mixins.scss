@@ -1,0 +1,21 @@
+@mixin d-grid-for-section() {
+    display: grid;
+    grid-template-areas: "div img";
+    justify-content: center;
+    align-items: center;
+
+    #{&}__img {
+        grid-area: img;
+        margin-left: 1rem;
+    }
+
+    div {
+        grid-area: div;
+    }
+}
+
+@mixin d-flex($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}

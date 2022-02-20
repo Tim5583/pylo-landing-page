@@ -1,0 +1,100 @@
+.secondary-section {
+    #{&}__img {
+        width: 100%;
+    }
+
+    div {
+        font-size: .95rem;
+
+        h2 {
+            font-size: 1rem;
+            font-family: $raleway-font-family;
+            font-weight: 700;
+            margin: 5rem auto 1rem;
+        }
+
+        .text-align-left {
+            text-align: left;
+            padding: .75rem 0;
+        }
+
+        h3 {
+            @include d-flex(center);
+            color: $Moderate-Cyan;
+            font-size: .9rem;
+            font-weight: 400;
+            margin: 2rem 0;
+
+            img {
+                width: 20px;
+                margin-left: .3rem;
+            }
+        }
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 5rem;
+        max-width: 370px;
+        height: 180px;
+        text-align: left;
+
+        & > :first-child {
+            font-size: .8rem;
+
+            &::before {
+                content: url(../images/icon-quotes.svg);
+                display: block;
+            }
+        }
+    }
+
+    .card__user-detail {
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+        line-height: 2;
+
+        .card__user-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .card__user-details {
+            text-align: left;
+            font-size: .6rem;
+            margin-left: 1rem;
+
+            & > :first-child {
+                font-weight: 700;
+                font-size: .85rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .secondary-section {
+        @include d-grid-for-section();
+
+        div {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            h3 {
+                justify-content: flex-start;
+            }
+
+            .text-align-left {
+                width: 75%;
+            }
+        }
+    }
+}

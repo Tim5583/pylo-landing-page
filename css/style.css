@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 2rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+}
+
+.nav .nav-img {
+  width: 100px;
+}
+
+.nav ul {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  ul {
+    max-width: 300px;
+  }
+}
+
+.main-section {
+  margin: 5rem auto;
+  padding-bottom: 1.5rem;
+}
+
+.main-section .main-section__img {
+  width: 100%;
+}
+
+.main-section div h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.main-section div p {
+  margin: 1rem 0;
+  font-size: .95rem;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+}
+
+.form input[type="email"] {
+  padding: .5rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.form input[type="email"]:focus {
+  outline: none;
+}
+
+.form input[type="email"]::-webkit-input-placeholder {
+  opacity: .4;
+}
+
+.form input[type="email"]:-ms-input-placeholder {
+  opacity: .4;
+}
+
+.form input[type="email"]::-ms-input-placeholder {
+  opacity: .4;
+}
+
+.form input[type="email"]::placeholder {
+  opacity: .4;
+}
+
+.form input[type="submit"] {
+  padding: .6rem;
+  background-color: #3065f8;
+  border: 0;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .container {
+    text-align: left;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form input[type="email"] {
+    margin-bottom: 0;
+    width: 70%;
+  }
+  .form input[type="submit"] {
+    width: 28%;
+  }
+  .main-section {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "div img";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-section .main-section__img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+    margin-left: 1rem;
+  }
+  .main-section div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: div;
+  }
+  .main-section div h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.secondary-section .secondary-section__img {
+  width: 100%;
+}
+
+.secondary-section div {
+  font-size: .95rem;
+}
+
+.secondary-section div h2 {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 5rem auto 1rem;
+}
+
+.secondary-section div .text-align-left {
+  text-align: left;
+  padding: .75rem 0;
+}
+
+.secondary-section div h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3c9f8f;
+  font-size: .9rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.secondary-section div h3 img {
+  width: 20px;
+  margin-left: .3rem;
+}
+
+.secondary-section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  max-width: 370px;
+  height: 180px;
+  text-align: left;
+}
+
+.secondary-section .card > :first-child {
+  font-size: .8rem;
+}
+
+.secondary-section .card > :first-child::before {
+  content: url(../images/icon-quotes.svg);
+  display: block;
+}
+
+.secondary-section .card__user-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: .5rem;
+  line-height: 2;
+}
+
+.secondary-section .card__user-detail .card__user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.secondary-section .card__user-detail .card__user-details {
+  text-align: left;
+  font-size: .6rem;
+  margin-left: 1rem;
+}
+
+.secondary-section .card__user-detail .card__user-details > :first-child {
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+@media (min-width: 800px) {
+  .secondary-section {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "div img";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondary-section .secondary-section__img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+    margin-left: 1rem;
+  }
+  .secondary-section div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: div;
+  }
+  .secondary-section div h2 {
+    font-size: 2.5rem;
+  }
+  .secondary-section div h3 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .secondary-section div .text-align-left {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

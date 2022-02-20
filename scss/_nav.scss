@@ -1,0 +1,20 @@
+.nav {
+    @include d-flex(space-between);
+    margin: 1rem auto;
+    .nav-img {
+        width: 100px;
+    }
+
+    ul {
+        flex-basis: 55%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 500px) {
+    ul {
+        max-width: 300px;
+    }
+}
