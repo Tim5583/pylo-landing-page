@@ -85,12 +85,19 @@
         @include d-grid-for-section();
 
         div {
+            font-size: 1.15rem;
+
             h2 {
                 font-size: 2.5rem;
             }
 
             h3 {
                 justify-content: flex-start;
+                font-size: 1.2rem;
+
+                img {
+                    width: 35px;
+                }
             }
 
             .text-align-left {

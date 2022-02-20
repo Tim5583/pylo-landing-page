@@ -10,7 +10,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 
 .container {
@@ -25,13 +25,9 @@ p {
   line-height: 1.5;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
+.max-container {
+  max-width: 1924px;
+  margin: auto;
 }
 
 .nav {
@@ -44,6 +40,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 1rem;
   margin: 1rem auto;
 }
 
@@ -65,6 +62,9 @@ p {
 }
 
 @media (min-width: 500px) {
+  .nav {
+    padding: 0 2rem;
+  }
   ul {
     max-width: 300px;
     font-size: 1.2rem;
@@ -177,6 +177,9 @@ p {
   }
   .main-section div h1 {
     font-size: 2.5rem;
+  }
+  .main-section div p {
+    font-size: 1.15rem;
   }
 }
 
@@ -306,6 +309,9 @@ p {
     -ms-grid-column: 1;
     grid-area: div;
   }
+  .secondary-section div {
+    font-size: 1.15rem;
+  }
   .secondary-section div h2 {
     font-size: 2.5rem;
   }
@@ -313,6 +319,10 @@ p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    font-size: 1.2rem;
+  }
+  .secondary-section div h3 img {
+    width: 35px;
   }
   .secondary-section div .text-align-left {
     width: 75%;
@@ -403,5 +413,19 @@ p {
   .third-section .container form input[type="submit"] {
     width: 40%;
   }
+}
+
+.footer {
+  background-color: #070439;
+}
+
+.footer .main-footer-content {
+  text-align: left;
+  color: #fff;
+}
+
+.footer .main-footer-content a {
+  color: inherit;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
