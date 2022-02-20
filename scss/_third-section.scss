@@ -1,0 +1,75 @@
+.third-section {
+    background-color: $Desaturated-Blue;
+    padding: 5rem 1.5rem;
+    color: $Light-Grayish-Blue;
+    
+
+    h2 {
+        font-family: $raleway-font-family;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    form {
+        input {
+            display: block;
+            width: 100%;
+        }
+    
+        input[type="email"] {
+            padding: .5rem 1rem;
+            margin-bottom: .5rem;
+    
+            &:focus {
+                outline: none;
+            }
+    
+            &::placeholder {
+                opacity: .4;
+            }
+        }
+    
+        input[type="submit"] {
+            padding: .6rem;
+            background-color: $Bright-Blue;
+            border: 0;
+            color: #fff;
+            font-family: $raleway-font-family;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .third-section {
+        padding: 2rem 5rem;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+    
+            h2 {
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                font-size: .9rem;
+            }
+    
+            div {
+                width: 80%;
+            }
+    
+            form {
+                input[type="submit"] {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

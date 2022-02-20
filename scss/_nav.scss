@@ -10,11 +10,13 @@
         display: flex;
         list-style: none;
         justify-content: space-between;
+        font-size: .9rem;
     }
 }
 
 @media (min-width: 500px) {
     ul {
         max-width: 300px;
+        font-size: 1.2rem;
     }
 }
