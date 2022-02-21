@@ -35,7 +35,43 @@
         }
         
         .footer-links:hover {
-            text-decoration: underline;
+            color: $Bright-Blue;
+        }
+
+        .footer__social-icons {
+            @include d-flex(space-between);
+            width: 150px;
+
+            .social-icons-div {
+                @include d-flex(center);
+                width: 40px;
+                height: 40px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $Bright-Blue;
+                    border-color: $Bright-Blue;
+                }
+            }
+        }
+    } 
+}
+
+@media (min-width: 800px) {
+    .footer {
+        .main-footer-content {
+            display: flex;
+            justify-content: space-between;
+
+            .footer__main {
+                align-self: flex-start;
+            }
+
+            .footer__about-us, .footer__contact-us, .footer__social-icons {
+                margin: 5rem auto 2rem auto;
+            }
         }
     }
 }
