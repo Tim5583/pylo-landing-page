@@ -106,6 +106,19 @@
 
             .card {
                 margin: 0 0 5rem 0;
+                & > :first-child {
+                    font-size: .9rem;
+                }
+            }
+        
+            .card__user-detail {        
+                .card__user-details {
+                    font-size: .7rem;
+        
+                    & > :first-child {
+                        font-size: .85rem;
+                    }
+                }
             }
         }
     }
