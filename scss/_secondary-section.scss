@@ -37,10 +37,25 @@
             font-size: .9rem;
             font-weight: 400;
             margin: 2rem 0;
-
+            position: relative;
+            // width: 230px;
             img {
                 width: 20px;
                 margin-left: .3rem;
+            }
+
+            &:after{
+                content: "";
+                width: 33%;
+                height: 2px;
+                background-color: $Moderate-Cyan;
+                position: absolute;
+                bottom: -5px;
+                margin: auto;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -51,10 +66,10 @@
         flex-direction: column;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
-        padding: 1rem;
+        padding: 2rem 1.25rem;
         margin: 1rem auto;
         max-width: 370px;
-        height: 180px;
+        // height: 180px;
         text-align: left;
 
         & > :first-child {
