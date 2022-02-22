@@ -1,4 +1,4 @@
-# FYLO LANDING PAGE <Not finished yet!>
+# FYLO LANDING PAGE
 
 ## Table of contents
 
@@ -21,7 +21,6 @@
 
 - Semantic HTML5 markup
 - Flexbox
-- grid
 - scss
 
 ### Useful resources
