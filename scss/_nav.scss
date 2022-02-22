@@ -12,12 +12,17 @@
         list-style: none;
         justify-content: space-between;
         font-size: .9rem;
+
+         li:hover {
+             text-decoration: underline;
+             cursor: pointer;
+         }
     }
 }
 
 @media (min-width: 500px) {
     .nav {
-        padding: 0 2rem;
+        padding: 0 5rem;
     }
 
     ul {

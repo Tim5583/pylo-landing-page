@@ -42,6 +42,10 @@
             font-weight: 700;
             cursor: pointer;
         }
+
+        input[type="submit"]:hover {
+            background-color: hsla(224, 93%, 58%, 0.624);;
+        }
     }
 }
 

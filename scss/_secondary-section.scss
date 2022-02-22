@@ -1,5 +1,17 @@
-.secondary-section {
-    margin: 5rem auto;
+.secondary-section-main {
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 4.5rem;
+    div {
+        background-color: #f8f8fe;
+    }
+}
+
+
+.secondary-section{
+    margin: auto;
+    padding: 5rem auto;
     #{&}__img {
         width: 100%;
     }
@@ -40,7 +52,7 @@
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         padding: 1rem;
-        margin: 0 auto 5rem auto;
+        margin: 1rem auto;
         max-width: 370px;
         height: 180px;
         text-align: left;
@@ -83,6 +95,7 @@
 @media (min-width: 800px) {
     .secondary-section {
         @include d-grid-for-section();
+
 
         div {
             font-size: 1.15rem;

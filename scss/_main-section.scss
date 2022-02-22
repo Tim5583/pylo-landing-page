@@ -47,6 +47,10 @@
         font-weight: 700;
         cursor: pointer;
     }
+
+    input[type="submit"]:hover {
+        background-color: hsla(224, 93%, 58%, 0.788);;
+    }
 }
 
 @media (min-width: 800px) {
@@ -55,11 +59,12 @@
     }
 
     .form {
-        @include d-flex(space-between);
+        @include d-flex(flex-start);
 
         input[type="email"] {
             margin-bottom: 0;
-            width: 70%;
+            width: 50%;
+            margin-right: .5rem;
         }
     
         input[type="submit"] {
